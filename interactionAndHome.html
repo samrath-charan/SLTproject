@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage 1</title>
+    <link rel="stylesheet" href="css/home.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header">
+        <p id="hello">Hello,Sammu</p>
+        <a href="" id="name">Sammu</a>
+        <select name="" id="homedropdown"></select>
+    </div>
+    <div id="sidebar">
+        <ul>
+            <li><a href="#">SLT</li></a>
+            <li><a href="#"> </li></a>
+            <li><a href="#">Dashboard</li></a>
+            <li><a href="#">Publish</li></a>
+            <li><a href="#">Activity</li></a>
+            <li><a href="#">Analytics</li></a>
+            <li>
+				<select class="file">
+					<option value="0" id="one" selected>Interaction</option>
+					<option value="1">Messages</option>
+					<option value="2">Mention and Hashtags</option>
+					<option value="3">FB Overview</option>
+					<option value="4">Instagram Overview</option>
+					<option value="5">Twitter Overview</option>
+					<option value="6">Linkedin Overview</option>
+                </select>
+			</li>
+            <li><a href="#">Influencers</li></a>
+            <li><a href="#">Performance</li></a>
+            <li><a href="#">Widget</li></a>
+            <li><a href="#">Help</li></a>
+        </ul>   
+    </div>
+</body>
+<script>
+	$(function(){
+		
+		$("select.file").change(function(){
+			var value = $(this).children("option:selected").val();
+			if(value == 0)
+			{
+				
+				window.location.href="interactionAndHome.html";
+			}
+			if(value == 1)
+			{
+				
+				window.location.href="messages.html";
+			}
+			
+			if(value == 2)
+			{
+
+				window.location.href="mentionsAndHashtags.html";
+			}
+			
+			if(value == 3)
+			{
+				
+				window.location.href="fbAndOverview.html";
+			}
+			if(value == 4)
+			{
+				
+				window.location.href="instagramOverview.html";
+			}
+			if(value == 5)
+			{
+				
+				window.location.href="twitterOverview.html";
+			}
+		});
+	});
+</script>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>project2</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/instagram_overview.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+</head>
+
+
+	
+	</body>
+	
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>project2</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/index5.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+</head>
+
+ 
+   <body>
+	<div class="main">
+		<div class="row1">
+			<div id="sidebar">
+				<p align="center" style="color:white;padding-top:14px;">SLT</p>
+				<ul type="square" style="color:white;">
+					<li><a href="#">Dashboard</li></a>
+					<li><a href="#">Publish</li></a>
+					<li><a href="#">Activity</li></a>
+					<li><a href="#">Analytics</li></a>
+					 <li>Interaction
+					 <select class="file">
+                <option value="0">Interaction</option>
+                <option value="1">Messages</option>
+                <option value="2">Mention and Hashtags</option>
+                <option value="3">FB Overview</option>
+                <option value="4" selected>Instagram Overview</option>
+                <option value="5">Twitter Overview</option>
+                <option value="6">Linkedin Overview</option>
+                
+              </select></li>
+					<li><a href="#">Influencers</li></a>
+					<li><a href="#">Performance</li></a>
+					<li><a href="#">Widget</li></a>
+					<li><a href="#">Help</li></a>
+				</ul>   
+			</div>
+		</div>
+		
+		<div class="row2">
+				<div class="header">
+					<p id="hello">Hello,Sammu</p>
+					<a href="" id="name">Sammu</a>
+					<select name="" id="homedropdown"></select>
+				</div>
+				<div class="facebook">
+						<div class="face1">
+							<p>Instagram Overview</p>
+					</div>
+					<div class="face2">
+						<button class="btn">Filter</button>
+					</div>
+				
+				</div>
+				<p align="center" id="para">Top Instagram Post</p>
+				<div class="post" >
+					<div class="fa1">
+						<span class="fa fa-bars"></span>
+						<p>425<br/> Enggagement</p>
+					</div>
+					<div class="fa2">
+						<span class="fa fa-user"></span>
+						<p>312<br/> Enggagement</p>
+					</div>
+					<div class="fa3">
+						<span class="fa fa-home"></span>
+						<p>153<br/> Enggagement</p>
+					</div>
+				</div>
+				<h2 align="center">Audience Growth</h2>
+				<div class="audience">
+						<div class="aud1">
+							<p align="center">Audience growth by day.</p>
+						</div>
+						<div class="aud2">
+							<p align="center">Followers Gained</p>
+						</div>
+				</div>
+				<div class="img">
+					<center><img src="images/5.png"/></center>
+				</div>
+				<div class="footer">
+					<div class="foot1">
+						<ul>
+							<li>Followers</li>
+							<li>Total</li>
+							<li>Followers</li>
+							<li>People that</li>
+						</ul>
+					</div>
+					<div class="foot2">
+						<ul>
+							<li>Metrics</li>
+							<li>Followers</li>
+							<li>gained</li>
+							<li>You Followed</li>
+						</ul>
+					</div>
+					<div class="foot3">
+						<ul>
+							<li>Metrics</li>
+							<li>Followers</li>
+							<li>gained</li>
+							<li>You Followed</li>
+						</ul>
+					</div>
+					<div class="foot4">
+						<ul>
+							<li>Metrics</li>
+							<li>Followers</li>
+							<li>gained</li>
+							<li>You Followed</li>
+						</ul>
+					</div>
+				</div>
+		</div>
+	</div>
+	</body>
+	
+	<script>
+	$(function(){
+		
+		$("select.file").change(function(){
+			var value = $(this).children("option:selected").val();
+			if(value == 0)
+			{
+				window.location.href="interactionAndHome.html";
+			}
+			if(value == 1)
+			{
+				
+				window.location.href="messages.html";
+			}
+			
+			if(value == 2)
+			{
+
+				window.location.href="mentionsAndHashtags.html";
+			}
+			
+			if(value == 3)
+			{
+				
+				window.location.href="fbAndOverview.html";
+			}
+			if(value == 4)
+			{
+				
+				window.location.href="instagramOverview.html";
+			}
+			if(value == 5)
+			{
+				
+				window.location.href="twitterOverview.html";
+			}
+		});
+	});
+</script>
+</html>

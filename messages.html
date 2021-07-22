@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>project2</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/messages.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+   
+	<div class="main">
+		<div class="row1">
+			<div id="sidebar">
+				<p align="center" style="color:white;">SLT</p>
+				<ul type="square" style="color:white;">
+					<li><a href="#">Dashboard</li></a>
+					<li><a href="#">Publish</li></a>
+					<li><a href="#">Activity</li></a>
+					<li><a href="#">Analytics</li></a>
+					 <li>Interaction
+					 <select class="file">
+                <option value="0" id="one">Interaction</option>
+                <option value="1" selected>Messages</option>
+                <option value="2">Mention and Hashtags</option>
+                <option value="3">FB Overview</option>
+                <option value="4">Instagram Overview</option>
+                <option value="5">Twitter Overview</option>
+                <option value="6">Linkedin Overview</option>
+                
+              </select></li>
+					<li><a href="#">Influencers</li></a>
+					<li><a href="#">Performance</li></a>
+					<li><a href="#">Widget</li></a>
+					<li><a href="#">Help</li></a>
+				</ul>   
+			</div>
+		</div>
+		
+		<div class="row2">
+			 <div class="header">
+				<p id="hello">Hello,Sammu</p>
+				<a href="" id="name">Sammu</a>
+				<select name="" id="homedropdown"></select>
+			</div>
+			
+			<div class="all_msg">
+				<div class="all_msg1">
+					<font class="msg" style=>All messages</font>
+				</div>
+				<div class="all_msg2">
+					<input class="msg" type="text" size="10px" id="al" >
+				</div>
+				<div class="all_msg3">
+					<button  class="msg" style="margin-left:30px;">Export</button>
+						<select name="filterdp" id="homedropdown3" style="margin-left:30px;">
+							<option value="0">Filter</option>
+						</select>
+				</div>
+			</div>
+			<div class="sources">Sources
+				<select class="sour">
+					<option>Twitter</option>
+					<option>Facebook</option>
+					<option>Insta</option>
+					<option>Linked In</option>
+				</select>
+				
+				Message Types<select class="msgs">
+					<option></option>
+					<option></option>
+					<option></option>
+					<option></option>
+				</select>
+			</div>
+			<div  class="cards">
+				<ul  class="messages">
+					<li>Messge From Facebook
+						<ul class="fb">
+							<li>Like</li>
+							<li>Dislike</li>
+							<li>Delete</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="messages">
+					<li>Messge From Twiiter
+						<ul class="fb">
+							<li>Like</li>
+							<li>Dislike</li>
+							<li>Delete</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="messages">
+					<li>Messge From Instagram
+						<ul class="fb">
+							<li>Like</li>
+							<li>Dislike</li>
+							<li>Delete</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="eng">
+				<p>Engagement</p>
+				<p >Activity Form:- Date, Week, Month</p>
+			</div>
+		<div class="division">
+			<div class="profiles">
+				<select>
+					<option>Profiles<br/>
+							(View All)
+					</option>
+					<option>Profile2</option>
+				</select>
+			</div>
+			<div align="center" class="dropdown">
+				<button class="dropbtn">Sort<span class="caret"></span>
+						<ul>
+							<li><a href="#">DAY</a></li>
+							<li><a href="#">WEEK</a></li>
+							<li><a href="#">Month</a></li>
+						</ul>
+				</button>
+			</div>
+			</div>
+			<div align="center" id="avgr">
+			
+				<p   align="center" style="color:black;"><b>Average Reply Time</b></p>
+				<p><font id="fon"><b>Under 24 Hours</b></font> <input type="text" class="inp0"/></p>
+				<p id="fon1"><font ><b>Under 12 Hours<b></font> <input type="text" class="inp1"/></p>
+				<p id="fon2"><font ><b>Under 6 Hours</b></font> &nbsp;&nbsp;<input type="text" class="inp2"/></p>
+			
+			</div>
+
+		</div>
+		
+	</body>
+	<script>
+	$(function(){
+		
+		$("select.file").change(function(){
+			var value = $(this).children("option:selected").val();
+			if(value == 0)
+			{
+				
+				window.location.href="interactionAndHome.html";
+			}
+			if(value == 1)
+			{
+				
+				window.location.href="messages.html";
+			}
+			
+			if(value == 2)
+			{
+
+				window.location.href="mentionsAndHashtags.html";
+			}
+			
+			if(value == 3)
+			{
+				
+				window.location.href="fbAndOverview.html";
+			}
+			if(value == 4)
+			{
+				
+				window.location.href="instagramOverview.html";
+			}
+			if(value == 5)
+			{
+				
+				window.location.href="twitterOverview.html";
+			}
+		});
+	});
+</script>
+</html>

@@ -1,0 +1,150 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/mentionadnhashtags.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="main">
+			<div class="row1">
+				<div id="sidebar">
+					<p align="center" style="color:white;">SLT</p>
+					<ul type="square" style="color:white;">
+						<li><a href="#">Dashboard</li></a>
+						<li><a href="#">Publish</li></a>
+						<li><a href="#">Activity</li></a>
+						<li><a href="#">Analytics</li></a>
+						 <li>Interaction
+						 <select class="file">
+					<option value="0">Interaction</option>
+					<option value="1">Messages</option>
+					<option value="2">Mention and Hashtags</option>
+					<option value="3">FB Overview</option>
+					<option value="4">Instagram Overview</option>
+					<option value="5">Twitter Overview</option>
+					<option value="6">Linkedin Overview</option>
+					
+				  </select></li>
+						<li><a href="#">Influencers</li></a>
+						<li><a href="#">Performance</li></a>
+						<li><a href="#">Widget</li></a>
+						<li><a href="#">Help</li></a>
+					</ul>   
+				</div>
+			</div>
+			<div class="row2">
+				 <div class="header">
+					<p id="hello">Hello,Sammu</p>
+					<a href="" id="name">Sammu</a>
+					<select name="" id="homedropdown"></select>
+				</div>
+			<div  class="section">
+				<div class="section1">
+					<font>Mention K hashtag</font>
+				</div>
+				<div class="section2">
+					<font>Pick Range:-</font>
+					<button>Days</button>
+					<button>Month</button>
+					<button>Week</button>
+				</div>
+			</div>
+				<p id="brand">@brandname</p>
+				<p id="brand">#brandname</p>
+		
+			<div align="center" class="mentions">
+				<div align="center" class="men1">
+					<p>All Mentions</p><br/>
+					<button style="padding:16px;width:200px"><span style="border-right:2px white;padding:20px;">Latest</span><span style="padding-left:15px;"> Popular</span>
+					</button>
+				</div>
+				<div align="center" class="men2">
+					<p>All Hash Tages</p><br/>
+					<button style="padding:16px;"><span style="border-right:2px white ;padding:20px;">Latest</span><span style="padding-left:15px;"> Popular</span>
+					</button>
+				</div>
+			</div>
+			<div class="msg">
+				<div class="msg1">
+					<p align="center">Messages with the<br/> mention will be <br/>displayed here</p>
+					<div align="right">
+						<button>View More</button>
+					</div>
+				</div>
+				<div class="msg2" align="right">
+					<p align="center">Messages with the<br/> hashtags will be <br/>displayed here</p>
+					<button>View More</button>
+					
+				</div>
+			</div>
+			<div class="social">
+				<div class="social1">
+					<span class="fa fa-wifi"></span>
+					<font>Social</font>
+					<font>Media</font>
+					<font>Rearch</font><br/>
+					<center><img src="images/6.png"/></center>
+				</div>
+					
+				<div class="social2">
+					<div align="center" class="dropdown">
+						<button class="dropbtn">Sort<span class="caret"></span>
+						<ul>
+							<li><a href="#">DAY</a></li>
+							<li><a href="#">WEEK</a></li>
+							<li><a href="#">Month</a></li>
+						</ul>
+						</button>
+					</div>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+  </body>
+  
+  <script>
+	$(function(){
+		
+		$("select.file").change(function(){
+			var value = $(this).children("option:selected").val();
+			if(value == 0)
+			{
+				
+				window.location.href="interactionAndHome.html";
+			}
+			if(value == 1)
+			{
+				
+				window.location.href="messages.html";
+			}
+			
+			if(value == 2)
+			{
+
+				window.location.href="mentionsAndHashtags.html";
+			}
+			
+			if(value == 3)
+			{
+				
+				window.location.href="fbAndOverview.html";
+			}
+			if(value == 4)
+			{
+				
+				window.location.href="instagramOverview.html";
+			}
+			if(value == 5)
+			{
+				
+				window.location.href="twitterOverview.html";
+			}
+		});
+	});
+</script>
+</html>
+			
+			
+			
+	
